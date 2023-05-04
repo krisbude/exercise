@@ -15,6 +15,7 @@ uiDesigner.xml
 vcs.xml
 misc.xml
 encodings.xml
+.idea
 
 ### Eclipse ###
 .apt_generated
