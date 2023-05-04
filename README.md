@@ -24,6 +24,17 @@ $ mvn spring-boot:run
 Update
 > PUT http://localhost:8080/customers with body of type CustomerResource
 
+>Example:
+> 
+> {
+"id": "853ec148-8a5e-4b37-9564-cc3d16aa3185",
+"firstName": "Kris",
+"lastName": "Bude",
+"middleName": null,
+"email": null,
+"phoneNumber": null,
+"birthDate": null
+}
 
 ### Quotation
 
