@@ -9,12 +9,15 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class CustomersEndpoint {
 
+
     private final CustomerRepository customerRepository;
+
 
     @Autowired
     public CustomersEndpoint(CustomerRepository customerRepository ) {
         this.customerRepository =  customerRepository;
     }
+
 
     @PutMapping("/customers")
     public CustomerResource updateCustomer(@RequestBody CustomerResource customer) {
@@ -31,4 +34,5 @@ public class CustomersEndpoint {
 
         return CustomerResource.from(customerRepository.save(existingCustomer));
     }
+
 }
